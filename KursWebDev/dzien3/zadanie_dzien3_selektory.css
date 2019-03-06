@@ -1,0 +1,62 @@
+
+/* zad 1. Stwórz selektor by drugi div miał font arial */
+
+div + div {
+    font-family: arial;
+}
+
+/*pyt na 6. czy elementy <p> w środku div, będą miały font arial?
+odp: tak, ponieważ odziedziczą po div */
+
+/* zad 2. dla podanego poniżej selektora, które elementy będą miały kolor yellow*/
+
+p + p {
+    color: yellow;
+}
+
+/* odp: Tekst 2 i Tekst 4 */
+
+
+/* zad 3. Jakie elementy dla poniższego selektora będą yellow? */
+
+p + p {
+    color: yellow;
+}
+
+/* odp: Tekst 2, Tekst 6, Tekst 4, Tekst 7 */
+
+/* zad 4. Napisz selektor, aby tylko trzeci <p> był żółty */
+
+p + p + p {
+    color: yellow;
+}
+
+/* zad 5. Napisz selektor, aby tylko 2,3 i 4 <p> ma być żółte */
+ 
+p ~ p {
+    color: yellow;
+}
+
+/* zad 6. Napisz selektor, aby tylko <p> z Tekst 2 zostało wybrane. */
+
+div div p {
+    color: yellow;
+}
+
+div div > p {
+    color: yellow;
+}
+
+/* zad 7. Napisz selektor, wybierający Tekst 1, Tekst 2, Tekst 3 */
+
+div > p {
+    color: yellow;
+}
+
+/* zad 8. Napisz selektor, wybierający Tekst 2 i Tekst 4 */
+
+div * p {
+    color: yellow;
+}
+
+
